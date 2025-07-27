@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="{{title_meta}} - PolyUploader" />
+  <meta property="og:url" content="https://polyuploader.vercel.app" />
+  <meta property="og:image" content="https://p-u.vercel.app/assets/meta_visual.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://p-u.vercel.app/assets/meta_visual.png" />
+  <meta property="og:description" content="{{title_description}} - PolyUploader. Upload your files remotely to different hosting sites." />
+  <meta name="theme-color" content="#4f46e5">
+  <title>{{title_page}} - PolyUploader</title>
+  <script src="https://cdn.tailwindcss.com/3.3.5"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="https://p-u.vercel.app/assets/icon.ico">
+</head>
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+</style>
+
+<body class="bg-slate-950 text-white overflow-x-hidden">
+    <div>
+      <div class="bg-indigo-950 absolute sm:w-[112vh] -z-10 blur-[16vh] h-[30rem] top-[30vh] right-[-32vh]"></div>
+      <div class="bg-blue-950 absolute sm:w-[150vh] md:left-[-60vh] left-[-30vh] -z-10 rounded-full blur-[16vh] top-[-1vh] h-[70vh]"></div>
+    </div>
+  
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-medium">
+      <h1 class="mt-16 text-4xl mb-2 font-bold text-center">{{title_view}} - PolyUploader</h1>
+      <p class="mb-5 text-lg font-normal text-center">Shared and grouped links</p>
+    </div>
+
+    <div class="bg-slate-900 p-4 m-10 rounded-lg border-separate border-indigo-500 border-2 shadow-[0_5px_30px_rgba(99,_102,_241,_0.3)]">
+      <pre class="code whitespace-normal" id="upload_content">~ Information ~<br>Uploaded filename.....: <strong>{{title_pre}}</strong><br>Link creation date....: <strong>{{upload_date}}</strong><br>Views.................: <strong>{{views}}</strong><br><br><br>~ Links ~<br>---------------------------------------------<br>{{links}}<br>---------------------------------------------<br><br>Created with PolyUploader</pre>
+    </div>
+    
+    <div class="text-base mt-10 text-slate-400 text-center">
+      <button class="px-3 py-1.5 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://polyuploader.vercel.app/', '_blank');">Documentation website <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://github.com/spel987/PolyUploader', '_blank');">GitHub repository <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/terms', '_blank');">Terms <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://ko-fi.com/spel987', '_blank');">Support me on Ko-Fi <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+</body>
+
+
+
+<script>
+const upload_content = document.getElementById('upload_content');
+let content = upload_content.innerHTML;
+const lines = content.split('<br>');
+const regex = /https?:\/\/\S+/;
+
+for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    const match = line.match(regex);
+    if (match !== null) {
+        const link = match[0];
+        const link_a = `<a class="text-sky-400 hover:underline" target="_blank" href="${link}">${link}</a>`;
+        lines[i] = line.replace(regex, link_a);
+    }
+}
+
+content = lines.join('<br>');
+upload_content.innerHTML = content;
+</script>

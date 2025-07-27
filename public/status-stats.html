@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Status & stats - PolyUploader" />
+  <meta property="og:url" content="https://polyuploader.vercel.app" />
+  <meta property="og:image" content="https://i.imgur.com/249378k.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://i.imgur.com/249378k.png" />
+  <meta property="og:description" content="Status & stats - PolyUploader. Upload your files remotely to different hosting sites." />
+  <meta name="theme-color" content="#4f46e5">
+  <title>Status & stats - PolyUploader</title>
+  <script src="https://cdn.tailwindcss.com/3.3.5"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/spel987/PolyUploader/main/src/icon.ico">
+</head>
+</html>
+
+
+<body>
+<pre class="code whitespace-normal" id="stats">
+   <strong><i class="fa-sharp-duotone fa-regular fa-star"></i> Number of stars on the GitHub repository</strong> ------------------------------ <span id="github_stars"><i>Loading...</i></span><br>
+   <strong><i class="fa-sharp-duotone fa-solid fa-code-pull-request ml-0.5 mr-0.5"></i> Number of pull requests on the GitHub repository</strong> ---------------------- <span id="github_pull_requests"><i>Loading...</i></span><br>
+   <strong><i class="fa-sharp-duotone fa-solid fa-clock-rotate-left ml-0.5 mr-0.5"></i> Date of last update</strong> --------------------------------------------------- <span id="date_last_update"><i>Loading...</i></span><br>
+   <strong><i class="fa-sharp-duotone fa-solid fa-database ml-0.5 mr-0.5"></i> Number of unique share links created</strong> ---------------------------------- <span id="shareable_links"><i>Loading...</i></span>
+</pre>
+</body>
+
+<script>
+const github_stars = document.getElementById("github_stars");
+const github_pull_requests = document.getElementById("github_pull_requests");
+const date_last_update = document.getElementById("date_last_update");
+const shareable_links = document.getElementById("shareable_links");
+
+function replace_element(replace, replacement) {
+    replace.innerHTML = replace.innerHTML.replace("<i>Loading...</i>", replacement);
+}
+
+fetch("https://p-u.vercel.app/api/count-database", {method: "GET"})
+.then(response => response.json())
+.then(data => {
+    if (data.data.number_of_elements) {
+        replace_element(shareable_links, data.data.number_of_elements);
+    } else if (data.data.number_of_elements == "0") {
+        replace_element(shareable_links, "0");
+    } else {
+        replace_element(shareable_links, "<u>Recovery error</u>");
+    }
+})
+
+fetch("https://api.github.com/repos/spel987/PolyUploader", {method: "GET"})
+.then(response => response.json())
+.then(data => {
+    if (data.stargazers_count) {
+        replace_element(github_stars, data.stargazers_count);
+    } else if (data.message && data.message.includes("API rate limit exceeded")) {
+        replace_element(github_stars, "<u>Rate limited by GitHub</u>");
+    }
+
+    if (data.pushed_at) {
+        const date = new Date(data.pushed_at);
+
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+
+        const formatted_date = `${year}-${month}-${day}`;
+        replace_element(date_last_update, formatted_date);
+    } else if (data.message && data.message.includes("API rate limit exceeded")) {
+        replace_element(date_last_update, "<u>Rate limited by GitHub</u>");
+    }
+})
+
+fetch("https://api.github.com/repos/spel987/PolyUploader/pulls", {method: "GET"})
+.then(response => response.json())
+.then(data => {
+    if (data.length > 0 && data.data.number) {
+        replace_element(github_pull_requests, data.data.number);
+    } else if (data.message && data.message.includes("API rate limit exceeded")) {
+        replace_element(github_pull_requests, "<u>Rate limited by GitHub</u>");
+    } else {
+        replace_element(github_pull_requests, "0")
+    }
+})
+</script>

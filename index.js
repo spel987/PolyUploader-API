@@ -64,8 +64,8 @@ app.get('/download', (req, res) => {
     res.redirect('https://github.com/spel987/PolyUploader/releases/latest');
 });
 
-app.get('/status-stats', async (req, res) => {
-    const file_path = path.join(__dirname, 'public/status-stats.html');
+app.get('/statistics', async (req, res) => {
+    const file_path = path.join(__dirname, 'public/statistics.html');
 
     fs.readFile(file_path, 'utf8', (err, html_content) => {
         if (err) {

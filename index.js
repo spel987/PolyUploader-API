@@ -7,6 +7,7 @@ const path = require('path');
 const cors = require('cors');
 const bin_router = require('./routes/bin.router');
 const telemetry_router = require('./routes/telemetry.router');
+const statistics_router = require('./routes/statistics.router');
 
 let track;
 
@@ -59,7 +60,7 @@ app.get('/update-config', async (req, res) => {
 
     fs.readFile(file_path, 'utf8', (err, json_content) => {
         if (err) {
-            return res.status(500).send('Error reading JSON file. If the problem persists, open an issue on the site\'s GitHub repository: https://github.com/spel987/PolyUploader-website/issues or send me an e-mail: spel987@pm.me');
+            return res.status(500).send('Error reading JSON file. If the problem persists, open an issue on the site\'s GitHub repository: https://github.com/spel987/PolyUploader-API/issues or send me an e-mail: spel987@pm.me');
         }
 
         const data = JSON.parse(json_content);
@@ -70,7 +71,7 @@ app.get('/update-config', async (req, res) => {
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/demonstration', (req, res) => {
-    res.sendFile(path.join(__dirname, 'assets', 'demonstration.html'));
+    res.sendFile(path.join(__dirname, 'public', 'demonstration.html'));
 });
 
 app.get('/googleda67cc0f18f3b235.html', (req, res) => {
@@ -78,7 +79,7 @@ app.get('/googleda67cc0f18f3b235.html', (req, res) => {
 });
 
 app.get('/terms', (req, res) => {
-    res.sendFile(path.join(__dirname, 'assets', 'terms.html'));
+    res.sendFile(path.join(__dirname, 'public', 'terms.html'));
 });
 
 app.get('/download', (req, res) => {
@@ -90,31 +91,18 @@ app.get('/statistics', async (req, res) => {
 
     fs.readFile(file_path, 'utf8', (err, html_content) => {
         if (err) {
-            return res.status(500).send('Error reading HTML file. If the problem persists, open an issue on the site\'s GitHub repository: https://github.com/spel987/PolyUploader-website/issues or send me an e-mail: spel987@pm.me');
+            return res.status(500).send('Error reading HTML file. If the problem persists, open an issue on the site\'s GitHub repository: https://github.com/spel987/PolyUploader-API/issues or send me an e-mail: spel987@pm.me');
         }
 
         res.send(html_content);
     });
 });
 
+app.use("/api/statistics", statistics_router);
+
 app.use("/api/bins", bin_router);
 
 app.use('/api/telemetry', telemetry_router);
-
-app.get("/api/count-database", async(req, res) => {
-    try {
-        const { rows } = await postgre.query("SELECT COUNT(*) FROM bins;")
-
-        if (rows[0]) {
-            const number_of_elements = rows[0].count
-            res.json({message: "OK", data: { number_of_elements }})
-        } else {
-            res.redirect('https://polyuploader.vercel.app/404');
-        }
-    } catch (error) {
-        res.json({message: error.msg});
-    };
-});
 
 app.use("/:id", async(req, res) => {
     try {
@@ -133,7 +121,7 @@ app.use("/:id", async(req, res) => {
 
             fs.readFile(file_path, 'utf8', (err, html_content) => {
                 if (err) {
-                    return res.status(500).send('Error reading HTML file. If the problem persists, open an issue on the site\'s GitHub repository: https://github.com/spel987/PolyUploader-website/issues or send me an e-mail: spel987@pm.me');
+                    return res.status(500).send('Error reading HTML file. If the problem persists, open an issue on the site\'s GitHub repository: https://github.com/spel987/PolyUploader-API/issues or send me an e-mail: spel987@pm.me');
                 }
                 const enhanced_html_content = html_content
                     .replace('{{title_page}}', title)

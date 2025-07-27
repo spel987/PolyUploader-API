@@ -49,13 +49,14 @@ router.post("/", async(req, res) => {
 
         const title = xss(req.body.title);
         const upload_date = xss(req.body.upload_date);
+        const formatted_date = new Date(upload_date).toISOString();
         const links = xss(req.body.links);
         const id = await generate_short_id(10);
         const token = await generate_short_id(30);
 
         const sql = 'INSERT INTO bins(id, title, upload_date, links, token, views) VALUES($1, $2, $3, $4, $5, 0) RETURNING *';
 
-        await postgre.query(sql, [id, title, upload_date, links, token]);
+        await postgre.query(sql, [id, title, formatted_date, links, token]);
 
         const url = `https://${req.get('host')}/${id}`;
 

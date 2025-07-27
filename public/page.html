@@ -11,7 +11,7 @@
   <meta property="og:description" content="{{title_description}} - PolyUploader. Upload your files remotely to different hosting sites." />
   <meta name="theme-color" content="#4f46e5">
   <title>{{title_page}} - PolyUploader</title>
-  <script src="https://cdn.tailwindcss.com/3.3.5"></script>
+  <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="https://p-u.vercel.app/assets/icon.ico">
 </head>
@@ -39,10 +39,11 @@ body {
       <pre class="code whitespace-normal" id="upload_content">~ Information ~<br>Uploaded filename.....: <strong>{{title_pre}}</strong><br>Link creation date....: <strong>{{upload_date}}</strong><br>Views.................: <strong>{{views}}</strong><br><br><br>~ Links ~<br>---------------------------------------------<br>{{links}}<br>---------------------------------------------<br><br>Created with PolyUploader</pre>
     </div>
     
-    <div class="text-base mt-10 text-slate-400 text-center">
+    <div class="text-base mt-10 text-slate-400 text-center space-y-2">
       <button class="px-3 py-1.5 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://polyuploader.vercel.app/', '_blank');">Documentation website <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
       <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://github.com/spel987/PolyUploader', '_blank');">GitHub repository <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
       <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/terms', '_blank');">Terms <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/statistics', '_blank');">Statistics <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
       <button class="px-3 py-1.5 ml-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://ko-fi.com/spel987', '_blank');">Support me on Ko-Fi <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
     </div>
 </body>

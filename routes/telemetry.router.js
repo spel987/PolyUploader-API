@@ -20,14 +20,7 @@ router.post('/:action', async (req, res) => {
         const date = xss(req.body.upload_date);
         const anonymized_links = xss(req.body.anonymized_links);
 
-        if (action === 'bins') {
-            const sql = "INSERT INTO telemetry_bins(upload_date, anonymized_links) VALUES($1, $2) RETURNING *";
-
-            await postgre.query(sql, [date, anonymized_links]);
-
-            return res.json({message: "OK"});
-
-        } else if (action === 'upload') {
+        if (action === 'upload') {
             const sql = "INSERT INTO telemetry_uploads(upload_date, anonymized_links) VALUES($1, $2) RETURNING *";
 
             await postgre.query(sql, [date, anonymized_links]);

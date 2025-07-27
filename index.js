@@ -5,8 +5,10 @@ const { Pool } = require('pg')
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-const bin_router = require('./routes/bin.router')
-const telemetry_router = require('./routes/telemetry.router')
+const bin_router = require('./routes/bin.router');
+const telemetry_router = require('./routes/telemetry.router');
+
+let track;
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -28,6 +30,25 @@ postgre.on('error', (err, client) => {
 });
 
 app.use(express.json());
+
+if (process.env.NODE_ENV === 'production') {
+  (async () => {
+    const analytics = await import('@vercel/analytics/server');
+    track = analytics.track;
+    console.log('Analytics loaded for production');
+  })();
+}
+
+app.use((req, res, next) => {
+  if (track && process.env.NODE_ENV === 'production') {
+    track('page_view', {
+      url: req.url,
+      method: req.method,
+      userAgent: req.get('User-Agent')
+    });
+  }
+  next();
+});
 
 app.get('/', (req, res) => {
     res.redirect('https://polyuploader.vercel.app');

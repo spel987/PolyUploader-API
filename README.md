@@ -1,4 +1,4 @@
-<img width="1000" height="300" alt="visual" src="https://github.com/user-attachments/assets/cf6380fd-207e-4285-97be-7b6eac3500f6" />
+<img src="https://i.imgur.com/nhMexyu.png">
 
 # PolyUploader API
 

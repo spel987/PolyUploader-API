@@ -12,7 +12,11 @@
   <meta name="theme-color" content="#4f46e5">
   <title>{{title_page}} - PolyUploader</title>
   <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
   <link rel="icon" type="image/x-icon" href="https://p-u.vercel.app/assets/icon.ico">
 </head>
 </html>
@@ -24,14 +28,14 @@ body {
 }
 </style>
 
-<body class="bg-slate-950 text-white overflow-x-hidden">
+<body class="bg-black text-white overflow-x-hidden">
     <div>
-      <div class="bg-indigo-950 absolute sm:w-[112vh] -z-10 blur-[16vh] h-[30rem] top-[30vh] right-[-32vh]"></div>
-      <div class="bg-blue-950 absolute sm:w-[150vh] md:left-[-60vh] left-[-30vh] -z-10 rounded-full blur-[16vh] top-[-1vh] h-[70vh]"></div>
+      <div class="bg-[#2e288e]/50 absolute sm:w-[112vh] -z-10 blur-[16vh] h-[30rem] top-[30vh] right-[-32vh]"></div>
+      <div class="bg-[#2e288e]/50 absolute sm:w-[150vh] md:left-[-60vh] left-[-30vh] -z-10 rounded-full blur-[16vh] top-[-1vh] h-[70vh]"></div>
     </div>
   
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-medium">
-      <h1 class="mt-16 text-4xl mb-2 font-bold text-center">{{title_view}} - PolyUploader</h1>
+      <h1 class="mt-16 text-4xl mb-2 font-bold text-center bg-gradient-to-b from-white to-slate-400 text-transparent bg-clip-text">{{title_view}} - PolyUploader</h1>
       <p class="mb-5 text-lg font-normal text-center">Shared and grouped links</p>
     </div>
 
@@ -40,11 +44,11 @@ body {
     </div>
     
     <div class="text-base mt-10 text-slate-400 text-center space-y-2">
-      <button class="px-3 py-1.5 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://polyuploader.vercel.app/', '_blank');">Documentation website <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://github.com/spel987/PolyUploader', '_blank');">GitHub repository <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/terms', '_blank');">Terms <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/statistics', '_blank');">Statistics <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-      <button class="px-3 py-1.5 ml-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://ko-fi.com/spel987', '_blank');">Support me on Ko-Fi <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://polyuploader.vercel.app/', '_blank');">Documentation website <i class="ml-1 fa-sharp-duotone fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://github.com/spel987/PolyUploader', '_blank');">GitHub repository <i class="ml-1 fa-sharp-duotone fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/terms', '_blank');">Terms <i class="ml-1 fa-sharp-duotone fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 mr-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://p-u.vercel.app/statistics', '_blank');">Statistics <i class="ml-1 fa-sharp-duotone fa-arrow-up-right-from-square"></i></button>
+      <button class="px-3 py-1.5 ml-2 font-normal text-base bg-indigo-500/40 border border-indigo-300/10 hover:bg-indigo-500/60 transition text-indigo-300 duration-3.5 rounded-lg hover:shadow-[0_0px_20px_rgba(99,_102,_241,_0.1)] active:scale-[1.02]" onclick="window.open('https://ko-fi.com/spel987', '_blank');">Support me on Ko-Fi <i class="ml-1 fa-sharp-duotone fa-arrow-up-right-from-from-square"></i></button>
     </div>
 </body>
 

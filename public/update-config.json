@@ -1,47 +1,47 @@
 {
   "version": "1.7.2",
-  "notes": "The new version 1.7.2 is now available.",
-  "pub_date": "2026-06-14T12:28:14.589Z",
+  "notes": "Download the installer for your platform from the assets below.",
+  "pub_date": "2026-06-14T13:56:35.274Z",
   "platforms": {
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFVZS0M0Q2ViOW5hWC8vWU1mUm0zUVlyaVhsd0FxMFpneUNTSmV6YXpjZWl0ME1JUzcvaEZoa0IyOHFKenFGSE82SzVGMFRYbzhsZG1qcUtPM0hUVFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDM5OTIwCWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX2FtZDY0LkFwcEltYWdlCndTSGRFVEVESXplcUxjaHlDVm5WdHNreDVJQ1RXYzNITytlUUtyWU0zc3V4YlBSZXF2SHhrR2lBRkk2TFB5TVRKeFJjelRodllQSHk3TXNjcm5sTkFBPT0K",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_1.7.2_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNGZUWk5WYlJuOTNLWXJsckFDSzVHeUtuTDVtQTVNQUtsdXAxWjFZU0pxbCt4Z3QwZU91VXowVytXOHZETmZDZDQzRnBzbm12aEtGblljeWdES0hVcUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MTM0CWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX2FtZDY0LkFwcEltYWdlCjdHa2pwbVVXamRnMmNmdzFnQmNPMndaWjNtNEFueFRvREw2VXd3VWlGUnVnNVB4NG5ySGJ6dkhBVnVzajJ3N1g3cno2ZkdsUXhWemNFendKYmd4K0FRPT0K",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_1.7.2_amd64.AppImage"
     },
     "linux-x86_64-appimage": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFVZS0M0Q2ViOW5hWC8vWU1mUm0zUVlyaVhsd0FxMFpneUNTSmV6YXpjZWl0ME1JUzcvaEZoa0IyOHFKenFGSE82SzVGMFRYbzhsZG1qcUtPM0hUVFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDM5OTIwCWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX2FtZDY0LkFwcEltYWdlCndTSGRFVEVESXplcUxjaHlDVm5WdHNreDVJQ1RXYzNITytlUUtyWU0zc3V4YlBSZXF2SHhrR2lBRkk2TFB5TVRKeFJjelRodllQSHk3TXNjcm5sTkFBPT0K",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_1.7.2_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNGZUWk5WYlJuOTNLWXJsckFDSzVHeUtuTDVtQTVNQUtsdXAxWjFZU0pxbCt4Z3QwZU91VXowVytXOHZETmZDZDQzRnBzbm12aEtGblljeWdES0hVcUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MTM0CWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX2FtZDY0LkFwcEltYWdlCjdHa2pwbVVXamRnMmNmdzFnQmNPMndaWjNtNEFueFRvREw2VXd3VWlGUnVnNVB4NG5ySGJ6dkhBVnVzajJ3N1g3cno2ZkdsUXhWemNFendKYmd4K0FRPT0K",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_1.7.2_amd64.AppImage"
     },
     "linux-x86_64-deb": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNGFOWlhYNUZhMXJlbHZOZ0VpM2R3OWc5V2daNkJtOTY3eWRoY2hSWTNTcGZ4WFlPaCtNSEx2QjZoTkhtSjlXdE9ZeG5venNTdlRNbGJXd09nNWFtbGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDM5OTIwCWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX2FtZDY0LmRlYgpIanRmdXZYWEFTWDAwQXgyN01FVVQwQkI1YjkxZ0w3U1dpMEhOcWx5c3BJNlpncVZvOHJvaXQ4NE0xcG12a1BYZk9qdnI2d1hmcHpQNlV3cmZONXVBUT09Cg==",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_1.7.2_amd64.deb"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFVwbmNCM25nQlFFVWxubjJPVTBWU3lIN3kyckVwQXNCRzU4ZE52Qlg4Q2dMRnJhN0trVnBWZkcxZ3BDZnB1VUsxTTltQkhXVmJCZG5Bd2JWY0NsS1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MTM0CWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX2FtZDY0LmRlYgpXanpyaWFyc0puV0tsMEpMUWdzeUYwbWNOUmczWTA2aUtmKzNFWW0xcHNncC9ta3htMUw1aFY5SU1qd3daQmJHNHdnOS9ZVUtiN2NBRVZOUDg3ekREZz09Cg==",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_1.7.2_amd64.deb"
     },
     "linux-x86_64-rpm": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFkxUnRQT1BVTnZINEFQRzVGQ1c5aGQ4MXBqR3RONmxkRGJaSUExK0FIR1NMbVdTWXlPYW5MaG1EU0JLV2E4SXgwQ3ozWjZHUVkrMnl2dFZsKzZONVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDM5OTIwCWZpbGU6UG9seVVwbG9hZGVyLTEuNy4yLTEueDg2XzY0LnJwbQpKV0JxYy9tRHJLS3JVczVINklMcXJjblUvOE5OanlmdFJYcTBTbU5yVU5Vck5wZXd4TnRwWE56M0pFYk4zQmc5WVIrK2NaMURaemVLdUQybjUydllBdz09Cg==",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader-1.7.2-1.x86_64.rpm"
-    },
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFF5Z3Q5TDhYSk8wV3d5QVp4VEs3MTlqS3NzemtQYUlIMisyRU5jMDN5WWd6by9mTUR3d1A5NUQ2MHdyd1Jvb0cxcWNKd2RsNzVQN2dOdHZzc05ySEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQwMDgxCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKN0NYb1RoWkRxR2dxbjdwT01EM09jVWxLQmt6emR6TW1lV3NWb2l0c0huMUt4bGRwUlBSOTczUDgvK0M4RnpNNmdsbWg2amROcFQxVjNvRjBueDNoQmc9PQo=",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_universal.app.tar.gz"
-    },
-    "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFF5Z3Q5TDhYSk8wV3d5QVp4VEs3MTlqS3NzemtQYUlIMisyRU5jMDN5WWd6by9mTUR3d1A5NUQ2MHdyd1Jvb0cxcWNKd2RsNzVQN2dOdHZzc05ySEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQwMDgxCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKN0NYb1RoWkRxR2dxbjdwT01EM09jVWxLQmt6emR6TW1lV3NWb2l0c0huMUt4bGRwUlBSOTczUDgvK0M4RnpNNmdsbWg2amROcFQxVjNvRjBueDNoQmc9PQo=",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_universal.app.tar.gz"
-    },
-    "darwin-aarch64-app": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFF5Z3Q5TDhYSk8wV3d5QVp4VEs3MTlqS3NzemtQYUlIMisyRU5jMDN5WWd6by9mTUR3d1A5NUQ2MHdyd1Jvb0cxcWNKd2RsNzVQN2dOdHZzc05ySEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQwMDgxCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKN0NYb1RoWkRxR2dxbjdwT01EM09jVWxLQmt6emR6TW1lV3NWb2l0c0huMUt4bGRwUlBSOTczUDgvK0M4RnpNNmdsbWg2amROcFQxVjNvRjBueDNoQmc9PQo=",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_universal.app.tar.gz"
-    },
-    "darwin-x86_64-app": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFF5Z3Q5TDhYSk8wV3d5QVp4VEs3MTlqS3NzemtQYUlIMisyRU5jMDN5WWd6by9mTUR3d1A5NUQ2MHdyd1Jvb0cxcWNKd2RsNzVQN2dOdHZzc05ySEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQwMDgxCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKN0NYb1RoWkRxR2dxbjdwT01EM09jVWxLQmt6emR6TW1lV3NWb2l0c0huMUt4bGRwUlBSOTczUDgvK0M4RnpNNmdsbWg2amROcFQxVjNvRjBueDNoQmc9PQo=",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFo2d2tnRVJScjFHRUEyVDhPb3pDQzcwRXkvT1MwOUpBcThoZGxDREt5TUJvVFZuSk0yNkJCaGJYTXFBVndUSjRJTHlpZGVjbHR6K0lFbFd6MElHTFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MTM0CWZpbGU6UG9seVVwbG9hZGVyLTEuNy4yLTEueDg2XzY0LnJwbQp6SDNEdC9aTmhiTStGNjhWWnFQM2RDM3pNR1JJT0M5Qm9zcG13VTFteTUzNTc0Nzl6cCtjV0hUTjdDVXcyenVOU25xOVVRemxYL1BiTStZSlBqSnZCZz09Cg==",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader-1.7.2-1.x86_64.rpm"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNGFibXJRZEVKNlJSUzRNWSt2L2lURkJGNmY5aElKSUJKOFU0UlQ3VXppaTJUUVdIMWFPaC9QK01BNVZDcEVodHlkOW0rODVqVURpakNOM1BsaEJVelFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQwMDkyCWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX3g2NC1zZXR1cC5leGUKeHBDYUNVUFk1U0xWOHJSZENLdGQ2U1E2MVExUlJEWFV5WGEwKy92Z2tkVVp1amtXOTQzbVlqZmJaREREQ3JYOFV5dHhKSzVyNHliWHUwaVBGNGRJRHc9PQo=",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_1.7.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFp5ZnYrV1Uya1BRcmFYQUxUL1pDcFlRUHFHSFVJQzl0QjYrcFY0ZG5RMVZKdWR1eTB1NFBVVGd3Ly81NDdCakQvNkpjL1IzSDlQb0RmK2NkWXRFZ1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1Mjg1CWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX3g2NC1zZXR1cC5leGUKeFM5T2QzelZpelV2My94SjVqaWxNQ0hmUzZHc2UxNWo2Q1lBYTJiZ2pGYTBWNld6cTRrRm1SRTZzOWVvS3dyKy9jVXRSSlFEL0pETThPVW0zVXpYQlE9PQo=",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_1.7.2_x64-setup.exe"
     },
     "windows-x86_64-nsis": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNGFibXJRZEVKNlJSUzRNWSt2L2lURkJGNmY5aElKSUJKOFU0UlQ3VXppaTJUUVdIMWFPaC9QK01BNVZDcEVodHlkOW0rODVqVURpakNOM1BsaEJVelFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQwMDkyCWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX3g2NC1zZXR1cC5leGUKeHBDYUNVUFk1U0xWOHJSZENLdGQ2U1E2MVExUlJEWFV5WGEwKy92Z2tkVVp1amtXOTQzbVlqZmJaREREQ3JYOFV5dHhKSzVyNHliWHUwaVBGNGRJRHc9PQo=",
-      "url": "https://github.com/spel987/PolyUploader/releases/download/v1.7.2/PolyUploader_1.7.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFp5ZnYrV1Uya1BRcmFYQUxUL1pDcFlRUHFHSFVJQzl0QjYrcFY0ZG5RMVZKdWR1eTB1NFBVVGd3Ly81NDdCakQvNkpjL1IzSDlQb0RmK2NkWXRFZ1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1Mjg1CWZpbGU6UG9seVVwbG9hZGVyXzEuNy4yX3g2NC1zZXR1cC5leGUKeFM5T2QzelZpelV2My94SjVqaWxNQ0hmUzZHc2UxNWo2Q1lBYTJiZ2pGYTBWNld6cTRrRm1SRTZzOWVvS3dyKy9jVXRSSlFEL0pETThPVW0zVXpYQlE9PQo=",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_1.7.2_x64-setup.exe"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFpnV0dxMXVqNXB1b3MrQXhtb056SlFjTGpEL2lGejIwKzlZRlRtK04rYlhnVUxSaFF0L0xWSmFrMmxoS0xiZ1ZVM2QxbS9RR2U5Mjd2WVNKVGdySlFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MzkwCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKakJRSHN2OGdKY1Q4akZJcDhJb21oalo0YTRZN3hqN2s2WVlnZFFsQlM3TjdWa2xLSlZNUmQ4SDJ3ZElrMlpqc3JyeFNjYU4vdXdVckJsTlpOdzF2Q1E9PQo=",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_universal.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFpnV0dxMXVqNXB1b3MrQXhtb056SlFjTGpEL2lGejIwKzlZRlRtK04rYlhnVUxSaFF0L0xWSmFrMmxoS0xiZ1ZVM2QxbS9RR2U5Mjd2WVNKVGdySlFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MzkwCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKakJRSHN2OGdKY1Q4akZJcDhJb21oalo0YTRZN3hqN2s2WVlnZFFsQlM3TjdWa2xLSlZNUmQ4SDJ3ZElrMlpqc3JyeFNjYU4vdXdVckJsTlpOdzF2Q1E9PQo=",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_universal.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFpnV0dxMXVqNXB1b3MrQXhtb056SlFjTGpEL2lGejIwKzlZRlRtK04rYlhnVUxSaFF0L0xWSmFrMmxoS0xiZ1ZVM2QxbS9RR2U5Mjd2WVNKVGdySlFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MzkwCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKakJRSHN2OGdKY1Q4akZJcDhJb21oalo0YTRZN3hqN2s2WVlnZFFsQlM3TjdWa2xLSlZNUmQ4SDJ3ZElrMlpqc3JyeFNjYU4vdXdVckJsTlpOdzF2Q1E9PQo=",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_universal.app.tar.gz"
+    },
+    "darwin-x86_64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVGNBOXlwSEhxNFpnV0dxMXVqNXB1b3MrQXhtb056SlFjTGpEL2lGejIwKzlZRlRtK04rYlhnVUxSaFF0L0xWSmFrMmxoS0xiZ1ZVM2QxbS9RR2U5Mjd2WVNKVGdySlFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ1MzkwCWZpbGU6UG9seVVwbG9hZGVyLmFwcC50YXIuZ3oKakJRSHN2OGdKY1Q4akZJcDhJb21oalo0YTRZN3hqN2s2WVlnZFFsQlM3TjdWa2xLSlZNUmQ4SDJ3ZElrMlpqc3JyeFNjYU4vdXdVckJsTlpOdzF2Q1E9PQo=",
+      "url": "https://github.com/spel987/PolyUploader/releases/download/main/PolyUploader_universal.app.tar.gz"
     }
   }
 }
